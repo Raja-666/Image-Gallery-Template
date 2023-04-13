@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Gallery Tempalate</title>
+        <link rel="stylesheet" type="text/css" href="gallerytempstyle.css">
+        
+        <div class="menubar">
+            <p class style="text-decoration-color: blue;"><strong>GALLERY TEMPLATES</strong></p>
+            <ul>
+                <li><a class="active" href="livedemo1.html">BlockDemo1</a></li>
+                <li><a href="livedemo1.html" target="_blank">BlockDemo2</a></li>
+                <li><a href="#SiteTemplates">SiteTemplates</a></li>
+                <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="paratag">
+        <P><h1>RAJA GALLERY TEMPLATES</h1><P>
+        </div>
+            <div class type="btn">
+                <form>
+                <button class="b4">Download Free Template</button>
+                <button class="b5">LIVE DEMO</button>
+            </form>
+        </div>
+    </div>
+    <div class="imagetags">
+        <img src="nature1.jpg" alt="nautreimage1" height="299" width="330">
+        <img src="nature2.jpg" alt="nautreimage2" height="299" width="330">
+        <img src="nature4.jpg" alt="nautreimage4" height="299" width="330">
+        <img src="nature5.jpg" alt="nautreimage5" height="299" width="330">
+    </div>
+    <div class="container">
+        <button class="b1" onClick="myFunction()">SEA IMAGES</button>
+        <button class="b2" onClick="myFunction2()">HILLS IMAGES</button>
+        <button class="b3" onClick="myFunction3()">FLOWER IMAGES</button>
+    </div>
+      <div class="imageshow">
+        <div id="first">
+            <img src="seaimage1.jpg" height="200" width="215">
+            <img src="seaimage4.jpg" height="200" width="215">
+            <img src="seaimage5.jpg" height="200" width="215"> 
+            <img src="seaimage6.jpg" height="200" width="215">
+        </div>
+        <div id="second">
+            <img src="hillsimage1.jpg" height="200" width="215"> 
+            <img src="hillsimage2.jpg" height="200" width="215"> 
+            <img src="hillsimage4.jpg" height="200" width="215">
+            <img src="hillsimage5.jpg" height="200" width="215">
+        </div>
+        <div id="third">
+            <img src="flowerimage1.jpg" height="200" width="215"> 
+            <img src="flowerimage2.jpg" height="200" width="215">  
+            <img src="flowerimage4.jpg" height="200" width="215">
+            <img src="flowerimage5.jpg" height="200" width="215">
+        </div>
+      </div>
+    
+</body>
+<script>
+    const myFunction = () => {
+  document.getElementById("first").style.display ='block';
+  document.getElementById("second").style.display ='none'
+  document.getElementById("third").style.display ='none'
+}
+
+const myFunction2 = () => {
+  document.getElementById("second").style.display ='block'
+  document.getElementById("first").style.display ='none'
+  document.getElementById("third").style.display ='none'
+}
+
+const myFunction3 = () => {
+  document.getElementById("third").style.display ='block'
+  document.getElementById("first").style.display ='none'
+  document.getElementById("second").style.display ='none'
+}
+
+</script>
+</html>
